@@ -1,0 +1,10 @@
+<div>
+  <p>{{name}}</p>
+</div>
+
+<app-button title="Next" (click)="onClick()"></app-button>
+
+<div>
+  <p>Conditions: {{data[index]?.weather_state_name}}</p>
+  <p>Wind: {{data[index]?.wind_speed?.toFixed(2)}} MPH {{data[index]?.wind_direction_compass}}</p>
+</div>
